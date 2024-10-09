@@ -10,13 +10,12 @@ public class Main {
         int N = in.nextInt();
         int[] massiv = new int[N];
         System.out.println("Введите значения температуры");
-        for (int i=0; i <massiv.length;i++){
-            massiv[i] = in.nextInt();
+        for (int i = 0; i < massiv.length; i++) {
+            massiv[i] = in.nextInt();  // заполнение массива консольным вводом
         }
 
 
-
-        System.out.println(calcMaxDays(massiv));
+        System.out.println("Максимальное количество дней = "+calcMaxDays(massiv));
     }
 
     public static int calcMaxDays(int massiv[]) {
