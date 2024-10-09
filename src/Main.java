@@ -6,11 +6,17 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);            // объявление переменной, что вводится с клавиатуры
-        System.out.println("Введите число");        // текст введите число
+        System.out.println("Введите количество дней наблюдения");        // текст введите число
         int N = in.nextInt();
         int[] massiv = new int[N];
+        System.out.println("Введите значения температуры");
+        for (int i=0; i <massiv.length;i++){
+            massiv[i] = Scanner.nextInt();
+        }
 
-        System.out.println(calcMaxDays(max));
+
+
+        System.out.println(calcMaxDays(massiv));
     }
 
     public static int calcMaxDays(int massiv[]) {
@@ -23,11 +29,13 @@ public class Main {
 
             if (count > max) {
                 max = count;
-                return max;
+
             }
 
         }
 
+
+        return max;
 
     }
 
