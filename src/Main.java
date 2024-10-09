@@ -8,7 +8,7 @@ public class Main {
         Scanner in = new Scanner(System.in);            // объявление переменной, что вводится с клавиатуры
         System.out.println("Введите количество дней наблюдения");        // текст введите число
         int N = in.nextInt();
-        int[] massiv = new int[N];
+        int[] massiv = new int[N]; // количество дней наблюдения задаем сколько данных в массиве
         System.out.println("Введите значения температуры");
         for (int i = 0; i < massiv.length; i++) {
             massiv[i] = in.nextInt();  // заполнение массива консольным вводом
