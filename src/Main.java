@@ -11,7 +11,7 @@ public class Main {
         int[] massiv = new int[N];
         System.out.println("Введите значения температуры");
         for (int i=0; i <massiv.length;i++){
-            massiv[i] = Scanner.nextInt();
+            massiv[i] = in.nextInt();
         }
 
 
